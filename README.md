@@ -73,21 +73,21 @@ For `linear_search`, the best case input value of key is when key is the first e
 
 **TODO: your answer goes here**
 
-Yes, the theoretical running times match my empirical results. The run time of linear search increase steadily as input size increase, reflecting the linear growth of O(n). The run time of binary search increases minimally as the input size increases, which shows the logarithmic growth of O(log_2(n).
+Yes, the theoretical running times match my empirical results. The run time of linear search increase steadily as input size increase, reflecting the linear growth of $O(n)$. The run time of binary search increases minimally as the input size increases, which shows the logarithmic growth of $O(log_2(n)$.
 
 - [ ] 10. Binary search assumes the input list is already sorted. Assume it takes $\Theta(n^2)$ time to sort a list of length $n$. Suppose you know ahead of time that you will search the same list $k$ times. 
   + What is worst-case complexity of searching a list of $n$ elements $k$ times using linear search?
       + **TODO: your answer goes here**
-          + The worst-case you can have for linear search is having to check all n elements Theta(n). Hence the worst-case complexity of searching a list of n elements k times using linear search is Theta(kn). 
+          + The worst-case you can have for linear search is having to check all n elements $\Theta(n)$. Hence the worst-case complexity of searching a list of n elements k times using linear search is $\Theta(kn)$. 
           
   + For binary search?
       + **TODO: your answer goes here**
-          + Similar to linear search, the worst-case complexity you can have for binary search is the time for one search times the k amount of searches hence Theta(k log(n))
+          + Similar to linear search, the worst-case complexity you can have for binary search is the time for one search times the k amount of searches hence $\Theta(k log(n))$
   + For what values of $k$ is it more efficient to first sort and then use binary search versus just using linear search without sorting?
       + **TODO: your answer goes here**
-          + Binary search with sorting: Theta(n^2 + k log(n))
-          + Linear search without sorting: Theta(kn)
-          + Find k such that:  Theta(n^2 + k log(n)) < Theta(kn)
-              + Simplify:      n^2 + k log(n)  <  kn  -->   n^2 <  kn - k log(n)  
-                  +   for large number of n:     n^2  <  kn    -->    n < k
-                      +   Hence it is more efficient to first sort and then use binary search when k is larger than n             
+          + Binary search with sorting: $\Theta(n^2 + k log(n))$
+          + Linear search without sorting: $\Theta(kn)$
+          + Find k such that:  $\Theta(n^2 + k log(n))$ < $\Theta(kn)$
+              + Simplify:      $n^2 + k log(n)$  <  $kn$  -->   $n^2$ <  $kn - k log(n)$  
+                  +   for large number of n:     $n^2$  <  $kn$    -->    $n$ < $k$
+                      +   Hence it is more efficient to first sort and then use binary search when $k$ is larger than $n$             
